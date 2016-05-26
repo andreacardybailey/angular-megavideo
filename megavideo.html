@@ -1,0 +1,17 @@
+<!-- DIRECTIVE TEMPLATE -->
+
+<video 
+  width="{{video.width}}" 
+  ng-click="video.togglePlay()" 
+  ng-dblclick="video.stopPlay()">
+  <source
+    ng-repeat="source in sources"
+    ng-src="{{ source.src }}"
+    type="{{ source.type }}" >
+  </source>
+</video>
+
+<!--  <video width="60%" controls>
+        <source src="https://ia600500.us.archive.org/1/items/Duck_and_Cover/1951_duck_and_cover.ogv" type="video/ogg"></source>
+        <source src="https://archive.org/download/Duck_and_Cover/1951_duck_and_cover_512kb.mp4" type="video/mp4"></source>
+      </video> -->

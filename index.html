@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="megaVideoDemo">
+<head>
+  <meta charset="UTF-8">
+  <title>MegaVideo Exercise</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="megavideo.js"></script>
+</head>
+<body>
+  <h1>Duck and Cover!</h1>
+<!--  <video width="60%" controls>
+        <source src="https://ia600500.us.archive.org/1/items/Duck_and_Cover/1951_duck_and_cover.ogv" type="video/ogg"></source>
+        <source src="https://archive.org/download/Duck_and_Cover/1951_duck_and_cover_512kb.mp4" type="video/mp4"></source>
+      </video> -->
+
+  <mega-video 
+    ogg="https://ia600500.us.archive.org/1/items/Duck_and_Cover/1951_duck_and_cover.ogv" 
+    mp4="https://archive.org/download/Duck_and_Cover/1951_duck_and_cover_512kb.mp4"
+    width="500px" >
+  </mega-video>
+  <mega-video 
+    ogg="https://ia600707.us.archive.org/26/items/Are_You_Keeping_Up_With_Your_Commodore_1983_Commodore_AU/Are_You_Keeping_Up_With_Your_Commodore_1983_Commodore_AU.ogv" 
+    mp4="https://archive.org/download/Are_You_Keeping_Up_With_Your_Commodore_1983_Commodore_AU/Are_You_Keeping_Up_With_Your_Commodore_1983_Commodore_AU.mp4" 
+    width="300px" >
+  </mega-video>
+  
+</body>
+</html>
